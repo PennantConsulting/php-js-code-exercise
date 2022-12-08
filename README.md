@@ -4,8 +4,9 @@
 
 This is a 2 part offline exercise to demonstrate general knowledge of PHP and JS.
 
-- Create a new personal repo called `cdc-js-php-exercise`. Don't fork this repo.
-- There's no time limit, but expectation is work should not extend past 2 hours
+- Create a new personal GitHub repo called `cdc-code-exercise`
+- You can **[download this repo](https://github.com/PennantConsulting/php-js-code-exercise/archive/refs/heads/main.zip)** as a template, but don't fork it.
+- There's no time limit, but expectation is work should not extend past 2 hours.
 
 ## Part 1: PHP Backend exercise
 
@@ -53,10 +54,16 @@ Business requirements for messages:
 For this JS frontend exercise:
 
 - Goal is to have a simple page with JS
+- Included here is a simple web server:
+  ```bash
+  npm i
+  npm start
+  ```
+  Docroot is `/public`
 
-Create a simple HTML page with JS that requests a mock response from your API, and displays a sample message on the page. You can use this simple JSON file for the mock message:
+Create a simple HTML page with JS that requests a mock response from your API, and displays a sample message on the page. You can use this simple JSON below for the mock message, or create your own. Save as a flat file and request it via an AJAX GET request, as if it were an API request.
 
-[message.json](message.json)
+[message.json](public/message.json)
 
 ```js
 {
@@ -70,7 +77,7 @@ Create a simple HTML page with JS that requests a mock response from your API, a
 }
 ```
 
-Business requirements for page display:
+Business requirements for page:
 
 1. Message **title** should be 24px
-2. Dates should be formatted into a friendly format for the end user's local time
+2. Dates should be formatted into a friendly format for the end user's local times
